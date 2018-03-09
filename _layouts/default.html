@@ -1,0 +1,48 @@
+{% include head.html %}
+<div id="container">
+<nav id="header">
+	{% assign base = '' %}
+	{% assign depth = page.url | split: '/' | size | minus: 1 %}
+	{% if    depth <= 1 %}{% assign base = '.' %}
+	{% elsif depth == 2 %}{% assign base = '..' %}
+	{% elsif depth == 3 %}{% assign base = '../..' %}
+	{% elsif depth == 4 %}{% assign base = '../../..' %}
+	{% elsif depth == 5 %}{% assign base = '../../../..' %}
+	{% endif %}
+    <div class="container content-container">
+        <p><a href="{{ base }}">{{ site.title }}</a></p>
+    </div>
+</nav>
+
+<div class="container content-container" id="content">
+    <main>
+        {{ content }}
+    </main>
+    
+</div>
+
+{% include footer.html %}
+</div>
+
+<script>
+	 // function to set the height on fly
+ function autoHeight() {
+   $('#content').css('min-height', 0);
+   $('#content').css('min-height', (
+     $(document).height() 
+     - $('#header').height() 
+     - $('#footer').height()
+   ));
+ }
+
+ // onDocumentReady function bind
+ $(document).ready(function() {
+   autoHeight();
+ });
+
+ // onResize bind of the function
+ $(window).resize(function() {
+   autoHeight();
+ });
+
+</script>
