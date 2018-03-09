@@ -4,6 +4,7 @@ title:  "Anaren.com"
 date:   2018-03-08 06:18:33 -0500
 categories: Drupal
 summary: Hey man whats up
+img: http://via.placeholder.com/650x350
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

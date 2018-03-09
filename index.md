@@ -9,6 +9,7 @@ layout: default
     {% for post in site.posts limit:2 offset:offset %}
     <div class="col-sm-6">
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <img src="{{ post.img }}" class="img-responsive" alt="{{ post.title }} image" />
       <p>{{ post.summary }}</p>
       </div>
     {% endfor %}
