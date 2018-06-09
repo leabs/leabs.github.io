@@ -1,50 +1,114 @@
 {% include head.html %}
-<div id="container">
-<nav id="header">
-	{% assign base = '' %}
-	{% assign depth = page.url | split: '/' | size | minus: 1 %}
-	{% if    depth <= 1 %}{% assign base = '.' %}
-	{% elsif depth == 2 %}{% assign base = '..' %}
-	{% elsif depth == 3 %}{% assign base = '../..' %}
-	{% elsif depth == 4 %}{% assign base = '../../..' %}
-	{% elsif depth == 5 %}{% assign base = '../../../..' %}
-	{% endif %}
-    <div class="container content-container">
-        <p><a href="{{ base }}">{{ site.title }}</a></p>
+
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="https://bulma.io/">
+        Home
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="/documentation/overview/start/">
+          Docs
+        </a>
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item" href="/documentation/overview/start/">
+            Overview
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+            Modifiers
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+            Columns
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+            Layout
+          </a>
+          <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+            Form
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+            Elements
+          </a>
+          <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+            Components
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="button is-info" href="https://github.com/leabs">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>
+                GitHub
+              </span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-info" href="mailto:stevenleabo@gmail.com">
+              <span class="icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span>Contact</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>
 
-<div class="container content-container" id="content">
-    <main>
-      <div class="content">
-        {{ content }}
+ <section class="section" style="padding:0;">
+<!-- Info at https://stripe.com/blog/connect-front-end-experience -->
+<main>
+   <header>
+      <div class="stripes">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
       </div>
-    </main>
-    
-</div>
+      <section class="section">
+      <div class="container">
+      </div>
+      </section>
+   </header>
+</main>
+</section>
 
-{% include footer.html %}
-</div>
+<section class="is-fullheight is-bold">
 
-<script>
-	 // function to set the height on fly
- function autoHeight() {
-   $('#content').css('min-height', 0);
-   $('#content').css('min-height', (
-     $(document).height() 
-     - $('#header').height() 
-     - $('#footer').height()
-   ));
- }
 
- // onDocumentReady function bind
- $(document).ready(function() {
-   autoHeight();
- });
+   
+  <div class="hero-body">
+  <div class="container">
+    <h1 class="title">{{ page.title }}</h1>
+    <h2 class="subtitle">{{ page.summary }}</h2>
+    {{ content }}
+  </div>
+  </div>
 
- // onResize bind of the function
- $(window).resize(function() {
-   autoHeight();
- });
+  <!-- nav at the bottom -->
+ 
+</section>
 
-</script>
+{% include scripts.html %}
+
