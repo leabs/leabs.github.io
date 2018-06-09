@@ -1,72 +1,207 @@
 {% include head.html %}
 
-<nav class="navbar is-transparent">
+<nav class="navbar ">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+    <a class="navbar-item" href="http://bulma.io">
+      <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
     </a>
-    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+
+    <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+      <span class="icon" style="color: #333;">
+        <i class="fa fa-github"></i>
+      </span>
+    </a>
+
+    <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+      <span class="icon" style="color: #55acee;">
+        <i class="fa fa-twitter"></i>
+      </span>
+    </a>
+
+    <div class="navbar-burger burger" data-target="navMenubd-example">
       <span></span>
       <span></span>
       <span></span>
     </div>
   </div>
 
-  <div id="navbarExampleTransparentExample" class="navbar-menu">
+  <div id="navMenubd-example" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="https://bulma.io/">
-        Home
-      </a>
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="/documentation/overview/start/">
+        <a class="navbar-link  is-active" href="/documentation/overview/start/">
           Docs
         </a>
-        <div class="navbar-dropdown is-boxed">
-          <a class="navbar-item" href="/documentation/overview/start/">
+        <div class="navbar-dropdown ">
+          <a class="navbar-item " href="/documentation/overview/start/">
             Overview
           </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+          <a class="navbar-item " href="http://bulma.io/documentation/modifiers/syntax/">
             Modifiers
           </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+          <a class="navbar-item " href="http://bulma.io/documentation/columns/basics/">
             Columns
           </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+          <a class="navbar-item " href="http://bulma.io/documentation/layout/container/">
             Layout
           </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+          <a class="navbar-item " href="http://bulma.io/documentation/form/general/">
             Form
           </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+          <a class="navbar-item " href="http://bulma.io/documentation/elements/box/">
             Elements
           </a>
-          <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
-            Components
+          
+            <a class="navbar-item is-active" href="http://bulma.io/documentation/components/breadcrumb/">
+              Components
+            </a>
+          
+          <hr class="navbar-divider">
+          <div class="navbar-item">
+            <div>
+              <p class="is-size-6-desktop">
+                <strong class="has-text-info">0.5.1</strong>
+              </p>
+              
+                <small>
+                  <a class="bd-view-all-versions" href="/versions">View all versions</a>
+                </small>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link " href="http://bulma.io/blog/">
+          Blog
+        </a>
+        <div id="blogDropdown" class="navbar-dropdown " data-style="width: 18rem;">
+          
+            <a class="navbar-item" href="/2017/08/03/list-of-tags/">
+              <div class="navbar-content">
+                <p>
+                  <small class="has-text-info">03 Aug 2017</small>
+                </p>
+                <p>New feature: list of tags</p>
+              </div>
+            </a>
+          
+            <a class="navbar-item" href="/2017/08/01/bulma-bootstrap-comparison/">
+              <div class="navbar-content">
+                <p>
+                  <small class="has-text-info">01 Aug 2017</small>
+                </p>
+                <p>Bulma / Bootstrap comparison</p>
+              </div>
+            </a>
+          
+            <a class="navbar-item" href="/2017/07/24/access-previous-bulma-versions/">
+              <div class="navbar-content">
+                <p>
+                  <small class="has-text-info">24 Jul 2017</small>
+                </p>
+                <p>Access previous Bulma versions</p>
+              </div>
+            </a>
+          
+          <a class="navbar-item" href="http://bulma.io/blog/">
+            More posts
+          </a>
+          <hr class="navbar-divider">
+          <div class="navbar-item">
+            <div class="navbar-content">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <strong>Stay up to date!</strong>
+                  </div>
+                </div>
+                <div class="level-right">
+                  <div class="level-item">
+                    <a class="button bd-is-rss is-small" href="http://bulma.io/atom.xml">
+                      <span class="icon is-small">
+                        <i class="fa fa-rss"></i>
+                      </span>
+                      <span>Subscribe</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <div class="navbar-link">
+          More
+        </div>
+        <div id="moreDropdown" class="navbar-dropdown ">
+          <a class="navbar-item " href="http://bulma.io/extensions/">
+            <div class="level is-mobile">
+              <div class="level-left">
+                <div class="level-item">
+                  <p>
+                    <strong>Extensions</strong>
+                    <br>
+                    <small>Side projects to enhance Bulma</small>
+                  </p>
+                </div>
+              </div>
+              <div class="level-right">
+                <div class="level-item">
+                  <span class="icon has-text-info">
+                    <i class="fa fa-plug"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
           </a>
         </div>
       </div>
+      <a class="navbar-item " href="http://bulma.io/expo/">
+        <span class="bd-emoji">🎨</span>
+        Expo
+      </a>
+      <a class="navbar-item " href="http://bulma.io/love/">
+        <span class="bd-emoji">❤️</span>
+        Love
+      </a>
     </div>
 
     <div class="navbar-end">
+      <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
+        <span class="icon" style="color: #333;">
+          <i class="fa fa-github"></i>
+        </span>
+      </a>
+      <a class="navbar-item is-hidden-desktop-only" href="https://twitter.com/jgthms" target="_blank">
+        <span class="icon" style="color: #55acee;">
+          <i class="fa fa-twitter"></i>
+        </span>
+      </a>
       <div class="navbar-item">
         <div class="field is-grouped">
           <p class="control">
-            <a class="button is-info" href="https://github.com/leabs">
-              <span class="icon">
-                <i class="fab fa-github"></i>
-              </span>
-              <span>
-                GitHub
-              </span>
-            </a>
+            <a class="bd-tw-button button"
+  data-social-network="Twitter"
+  data-social-action="tweet"
+  data-social-target="http://bulma.io"
+  target="_blank"
+  href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&hashtags=bulmaio&url=http://bulma.io&via=jgthms">
+  <span class="icon">
+    <i class="fa fa-twitter"></i>
+  </span>
+  <span>
+    Tweet
+  </span>
+</a>
+
           </p>
           <p class="control">
-            <a class="button is-info" href="mailto:stevenleabo@gmail.com">
+            <a class="button is-primary" href="https://github.com/jgthms/bulma/archive/0.5.1.zip">
               <span class="icon">
-                <i class="fas fa-envelope"></i>
+                <i class="fa fa-download"></i>
               </span>
-              <span>Contact</span>
+              <span>Download</span>
             </a>
           </p>
         </div>
@@ -75,40 +210,31 @@
   </div>
 </nav>
 
- <section class="section" style="padding:0;">
-<!-- Info at https://stripe.com/blog/connect-front-end-experience -->
-<main>
-   <header>
-      <div class="stripes">
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-      </div>
-      <section class="section">
-      <div class="container">
-      </div>
-      </section>
-   </header>
-</main>
-</section>
-
-<section class="is-fullheight is-bold">
-
-
+<div class="columns is-fullheight">
+  <div class="column is-2 is-sidebar-menu is-hidden-mobile">
+    <aside class="menu">
+  <p class="menu-label">
+    Projects
+  </p>
+  <ul class="menu-list">
    
-  <div class="hero-body">
-  <div class="container">
-    <h1 class="title">{{ page.title }}</h1>
-    <h2 class="subtitle">{{ page.summary }}</h2>
-    {{ content }}
-  </div>
-  </div>
 
-  <!-- nav at the bottom -->
+     {% for post in site.posts  %}
  
-</section>
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      
+  {% endfor %}
+  </ul>
+  
+</aside>
+  </div>
+  <div class="column is-main-content">
+    <section class="section">
+    {{ content }}
+  </section>
+  </div>
+</div>
 
 {% include scripts.html %}
+
 
