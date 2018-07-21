@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: default-full
 title:  "Atmosphere IoT"
 date:   2018-03-08 06:18:33 -0500
-categories: Drupal
+categories: jekyll
 summary: Jekyll website for the Internet of Things start-up company.
 img: 02.jpg
 ---

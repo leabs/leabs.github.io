@@ -1,50 +1,57 @@
-{% include head.html %}
-<div id="container">
-<nav id="header">
-	{% assign base = '' %}
-	{% assign depth = page.url | split: '/' | size | minus: 1 %}
-	{% if    depth <= 1 %}{% assign base = '.' %}
-	{% elsif depth == 2 %}{% assign base = '..' %}
-	{% elsif depth == 3 %}{% assign base = '../..' %}
-	{% elsif depth == 4 %}{% assign base = '../../..' %}
-	{% elsif depth == 5 %}{% assign base = '../../../..' %}
-	{% endif %}
-    <div class="container content-container">
-        <p><a href="{{ base }}">{{ site.title }}</a></p>
-    </div>
-</nav>
+ {% include head.html %}
+{% include nav.html %}
 
-<div class="container content-container" id="content">
-    <main>
-      <div class="content">
-        {{ content }}
-      </div>
-    </main>
+<section class="hero is-info">
+    <br />
+
+
+            <div class="tabs is-boxed is-centered main-menu" id="nav">
+                <ul>
+                    <li data-target="pane-1" id="1">
+                        <a>
+                            <span class="icon is-small"><i class="fa fa-image"></i></span>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li data-target="pane-2" id="2" class="is-active">
+                        <a>
+                            <span class="icon is-small"><i class="fab fa-empire"></i></span>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li data-target="pane-3" id="3">
+                        <a>
+                            <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+                            <span>Team</span>
+                        </a>
+                    </li>
+                  
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane" id="pane-1" class="level">
+                    <div class="container">
+                    {{ content }}
+                </div>
+                </div>
+                <div class="tab-pane" id="pane-3">
+                   
+                        <div class="container ">
+                            <p>I'm a frontend web developer that specializes in css and javascript framework and static site generators like Jekyll and Gatsby.</p>
+                       
+                    </div>
+                </div>
+                
+                <div class="tab-pane is-active" id="pane-2">
+                
+                        <div class="container ">
+                            <p>I'm a frontend web developer that specializes in css and javascript framework and static site generators like Jekyll and Gatsby.</p>
+                      
+                    </div>
+            </div>
+        </div>
+    </section>
     
-</div>
 
-{% include footer.html %}
-</div>
-
-<script>
-	 // function to set the height on fly
- function autoHeight() {
-   $('#content').css('min-height', 0);
-   $('#content').css('min-height', (
-     $(document).height() 
-     - $('#header').height() 
-     - $('#footer').height()
-   ));
- }
-
- // onDocumentReady function bind
- $(document).ready(function() {
-   autoHeight();
- });
-
- // onResize bind of the function
- $(window).resize(function() {
-   autoHeight();
- });
-
-</script>
+<script src="js/bulma.js"></script>
+<script src="js/tabs.js"></script>

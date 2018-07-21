@@ -1,0 +1,54 @@
+<nav class="navbar is-info">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <p>Steven Leabo</p>
+            </a>
+            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="navbarExampleTransparentExample" class="navbar-menu is-info is-paddingless">
+            <div class="navbar-start is-link">
+                <div class="navbar-item has-dropdown is-hoverable is-info" style="background:#209cee;">
+                    <a class="navbar-link is-info" href="/documentation/overview/start/">
+                            Projects
+                        </a>
+                    <div class="navbar-dropdown ">
+                        
+                        {% for post in site.posts %}
+                        <a class="navbar-item is-active" href="{{ post.url }}">{{ post.title }}</a> 
+                        {% endfor %} 
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="bd-tw-button button" target="_blank" href="https://github.com/leabs">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>
+                                        GitHub
+                                    </span>
+                                </a>
+                        </p>
+                        <p class="control">
+                            <a class="button is-default" href="mailto:stevenleabo@gmail.com">
+                                    <span class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                    <span>Contact</span>
+                                </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
