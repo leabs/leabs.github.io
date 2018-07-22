@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<base href="/"> 
@@ -10,15 +10,14 @@
 	<meta name="theme-color" content="#4285f4">
 	<meta name="robots" content="index,follow"><!-- All Search Engines -->
 	<meta name="googlebot" content="index,follow"><!-- Google Specific -->
-<<<<<<< HEAD
+
 	<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css'>
-	<link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
+
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-=======
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -34,106 +33,169 @@ html {
 
 .is-sidebar-menu {
   padding: 2.5rem;
-  background: #4a4a4a;
+  background: #CFD8DC;
+  overflow-y:scroll;
 }
 .is-sidebar-menu li a {
-  color: white;
+  color: #444;
 }
-
+.is-sidebar-menu li a:hover {
+  color: #0288D1;
+}
+a{
+	 color: #444;
+}
+a:hover{
+	 color: #0288D1;
+}
 .columns.is-fullheight {
-  min-height: calc(100vh - ( 3.25rem - .75rem ) );
-  max-height: calc(100vh - ( 3.25rem - .75rem ) );
-  height: calc(100vh - ( 3.25rem - .75rem ) );
+  min-height: 100vh;
+
   display: flex;
   flex-direction: row;
   justify-content: stretch;
+  margin-bottom:0;
+  margin-top:0;
 }
 .columns.is-fullheight .column {
   overflow-y: auto;
 }
 
 .is-main-content {
-  background: #dbdbdb;
+  background: #37474F;
 }
-
-
+.is-main-content p {
+  color:white
+}
+.is-main-content h1{
+  color:white
+}
+.nav-summary{
+	margin-top:8px;
+	margin-left:14px;
+	padding-bottom:6px;
+}
+.menu-label{
+	text-transform:none;
+	font-size:.85em;
+}
 </style>
->>>>>>> 6fcd23799398fa8ddc292d358f891f59cb486583
 </head>
-<nav class="navbar is-info">
-    <div class="container">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="#">
-                <p>Steven Leabo</p>
-            </a>
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <div id="navbarExampleTransparentExample" class="navbar-menu is-info is-paddingless">
-            <div class="navbar-start is-link">
-                <div class="navbar-item has-dropdown is-hoverable is-info" style="background:#209cee;">
-                    <a class="navbar-link is-info" href="/documentation/overview/start/">
-                            Projects
-                        </a>
-                    <div class="navbar-dropdown ">
-                        
-                        
-                        <a class="navbar-item is-active" href="/jekyll/welcome-to-jekyll2.html">Atmosphere IoT</a> 
-                        
-                        <a class="navbar-item is-active" href="/jekyll/welcome-to-jekyll.html">Anaren.com</a> 
-                        
-                        <a class="navbar-item is-active" href="/jekyll/welcome-to-jekyll.html">Jekyll Product Catalog</a> 
-                        
-                        <a class="navbar-item is-active" href="/php/welcome-to-jekyll.html">NY Knicks Forum</a> 
-                        
-                        <a class="navbar-item is-active" href="/handlebars/welcome-to-jekyll.html">Handlebar.js Templating</a> 
-                        
-                        <a class="navbar-item is-active" href="/jquery/netflix.html">Netflix Style UI</a> 
-                         
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="field is-grouped">
-                        <p class="control">
-                            <a class="bd-tw-button button" target="_blank" href="https://github.com/leabs">
-                                    <span class="icon">
-                                        <i class="fab fa-github"></i>
-                                    </span>
-                                    <span>
-                                        GitHub
-                                    </span>
-                                </a>
-                        </p>
-                        <p class="control">
-                            <a class="button is-default" href="mailto:stevenleabo@gmail.com">
-                                    <span class="icon">
-                                        <i class="fas fa-envelope"></i>
-                                    </span>
-                                    <span>Contact</span>
-                                </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
 
-<section>
-   <br />
-        <div class="container">
-            <h1>Handlebar.js Templating</h1>
-            <br />
-            <p>Things</p>
 
-        </div>
+<div class="columns is-fullheight">
+    <div class="column is-one-third is-sidebar-menu is-hidden-mobile">
+    <aside class="menu">
+ 
+   <ul class="menu-list">
+  <li><a href="">Home
+   <p class="menu-label  nav-summary">
+    I'm a frontend web developer that specializes in css and javascript framework and static site generators like Jekyll and Gatsby.
+  </p></a>
+  </li>
+  <li><a href="/contact.html">Contact</a></li>
+</ul>
+
+<br />
+  <ul class="menu-list">
    
-</section>
-<script src="js/bulma.js"></script>
-<script src="js/tabs.js"></script>
+
+     
+ 
+           <li><a href="/jekyll/developer.html">Developer.atmosphereiot.com
+
+            <p class="menu-label nav-summary">
+    Documentation and support site for Atmosphere IoT featuring static pages for guides, documenation, and a listing of platform elements.
+  </p>
+</a>
+
+            </li>
+      
+  
+ 
+           <li><a href="/jekyll/welcome-to-jekyll2.html">Atmosphere IoT
+
+            <p class="menu-label nav-summary">
+    Jekyll website for the Internet of Things start-up company.
+  </p>
+</a>
+
+            </li>
+      
+  
+ 
+           <li><a href="/jekyll/welcome-to-jekyll.html">Anaren.com
+
+            <p class="menu-label nav-summary">
+    Drupal redesign for the East Syracuse Space & Defense engineering and manufacturing company.
+  </p>
+</a>
+
+            </li>
+      
+  
+ 
+           <li><a href="/jekyll/welcome-to-jekyll.html">Jekyll Product Catalog
+
+            <p class="menu-label nav-summary">
+    Flat data table using the DataTables API and Jekyll markdown files for products.
+  </p>
+</a>
+
+            </li>
+      
+  
+ 
+           <li><a href="/php/welcome-to-jekyll.html">NY Knicks Forum
+
+            <p class="menu-label nav-summary">
+    PHP and MySQL site that includes player pages, commenting, and player stats.
+  </p>
+</a>
+
+            </li>
+      
+  
+ 
+           <li><a href="/handlebars/welcome-to-jekyll.html">Handlebar.js Templating
+
+            <p class="menu-label nav-summary">
+    Various UI elements that populate with javascript object data.
+  </p>
+</a>
+
+            </li>
+      
+  
+ 
+           <li><a href="/jquery/netflix.html">Netflix Style UI
+
+            <p class="menu-label nav-summary">
+    JQuery menu similar to Netflix that includes styles on hover.
+  </p>
+</a>
+
+            </li>
+      
+  
+  </ul>
+  
+</aside>
+  </div>
+  <div class="column is-main-content">
+    <section class="section">
+        <h1>Handlebar.js Templating</h1>
+    <p>Things</p>
+
+  </section>
+  </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
+
+
+
