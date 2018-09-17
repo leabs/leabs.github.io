@@ -8,3 +8,5 @@ fields:
   name: hey
   label: Hey
   description: ewwer
+pages:
+- _posts/testing-foroestry.md
