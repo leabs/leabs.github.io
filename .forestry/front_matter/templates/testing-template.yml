@@ -1,0 +1,10 @@
+---
+label: testing template
+hide_body: false
+is_partial: false
+fields:
+- type: blocks
+- type: textarea
+  name: hey
+  label: Hey
+  description: ewwer
