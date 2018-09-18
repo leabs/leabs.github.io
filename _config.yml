@@ -1,17 +1,35 @@
-# Build settings
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
 
-markdown: kramdown
-permalink: none
-plugins:             [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
+# Setup
+title:            Steven Leabo
+tagline:          'Web Developer'
+description:      'Front-end web developer living in Upstate New York. I specialize in css framworks and static site generators.'
+url:              https://stevenleabo.com/
+baseurl:          ''
+                  # the optional subpath of your site, e.g. "/blog"
+                  # NB: This applies to all pages in your Jekyll site.
+                  # If you want to move just the blog index pages but keep
+                  # other pages at root, see the paginate_path and
+                  # sidebar_blog_link below.
 
-port: 4000
+author:
+  name:           'Steven Leabo'
+  url:            https://twitter.com/fongandrewc
 
-sass:
-  sass_dir: assets/css
-  style: :nested
+paginate:         5
+# paginate_path:    '/page:num'
+                    # Or '/blog/page:num' if you want to move your index pages
 
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
 
-title:		           "Portfolio Jekyll Theme"
-description:	       "Powered by Jekyll and GitHub Pages"
-author:              "Paul Le"
+# Sidebar link settings
+sidebar_home_link:  true
+# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
+                                # page. If you change your paginate_path,
+                                # set this to the root of the paginate_path
+                                # to enable a separate blog link.
