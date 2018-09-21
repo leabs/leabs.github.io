@@ -1,1 +1,10 @@
 <!-- Optional additional links to insert in sidebar nav -->
+<li>Projects</li>
+
+<ul style="list-style:none;">
+{% for projects in site.projects %}
+<li>
+  <a href="{{ projects.url }}">{{ projects.title }} </a>
+</li>
+{% endfor %}
+</ul>
