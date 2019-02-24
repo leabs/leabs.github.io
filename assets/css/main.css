@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Proxima-Nova;
+  src: url("{{ site.baseurl }}/assets/fonts/Proxima-Nova.otf"); }
+* {
+  font-family: Proxima-Nova !important; }
+
+.page > .container {
+  min-height: 100vh; }
+
+.iziModal-content > img {
+  margin-bottom: 0; }
+
+img {
+  border-radius: 0;
+  max-width: 100% !important; }
+
+.owl-carousel > img {
+  max-width: 100%; }
+
+.owl-stage-outer {
+  max-height: 60%; }
+
+.clippy {
+  top: 80%;
+  left: 60%; }
+
+/*# sourceMappingURL=main.css.map */

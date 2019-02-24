@@ -37,6 +37,42 @@
 <!--Clippy-->
 <script src="https://rawgit.com/smore-inc/clippy.js/master/build/clippy.min.js"></script>
 
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+
+    // Get all "navbar-burger" elements
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(function($el) {
+            $el.addEventListener('click', function() {
+
+                // Get the target from the "data-target" attribute
+                var target = $el.dataset.target;
+                var $target = document.getElementById(target);
+
+                // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                $el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+    }
+
+    var tocListChildren = $('.toc-list-item').children()
+    var tocSection = $('#tocs');
+
+    if (tocListChildren.length <= 0) {
+        tocSection.hide();
+    }
+
+});
+
+</script>
+
   <body class="page">
 
     
@@ -170,6 +206,10 @@
 </header>
 <div class="content">
     <div class="owl-carousel owl-theme">
+	
+	    
+	
+	    
 	
 	    
 	
@@ -408,6 +448,30 @@
 document.addEventListener('DOMContentLoaded', function() {
   clippy.load('Clippy', run);
 });
+</script>
+
+<script>
+	$('.owl-carousel').owlCarousel({
+    lazyLoad:true,
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+    }
+})
 </script>
 
 
