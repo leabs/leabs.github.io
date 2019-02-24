@@ -16,7 +16,7 @@ baseurl:          ''
 
 author:
   name:           'Steven Leabo'
-  url:            https://twitter.com/fongandrewc
+  url:            https://github.com/leabs
 
 paginate:         5
 # paginate_path:    '/page:num'
@@ -35,5 +35,6 @@ sidebar_home_link:  true
                                 # to enable a separate blog link.
 
 collections:
-  - projects
-    
+  projects:
+    output: true
+    permalink: /projects/:path/

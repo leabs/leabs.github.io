@@ -2,15 +2,20 @@
 <html lang="en-us">
 
   {% include head.html %}
+  {% include scripts.html %}
 
   <body class="{{ page.layout }}{% if page.url == '/' %} home{% endif %}">
 
-    {% include sidebar.html %}
+    
 
     <main class="container">
+    	<div id="topbar">
+    {% include navbar.html %}
+</div>
       {{ content }}
     </main>
 
     {% include custom-foot.html %}
+
   </body>
 </html>

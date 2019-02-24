@@ -5,13 +5,13 @@
 {% for node in pages_list %}
   {% if node.title != null %}
     {% if node.layout == "category" %}
-    <li>Blog Categories</li>
-    <ul style="list-style:none;">
+    <!--<li>Blog Categories</li>
+    <ul style="list-style:none; padding-left:0;">
     	<li>
       <a class="category-link {% if page.url == node.url %} active{% endif %}"
           href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
       </li>
-  </ul>
+  </ul>-->
     {% endif %}
   {% endif %}
 {% endfor %}
