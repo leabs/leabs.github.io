@@ -6,7 +6,7 @@ highlighter:      rouge
 title:            Steven Leabo
 tagline:          'Web Developer'
 description:      'Front-end web developer living in Upstate New York. I specialize in css framworks and static site generators.'
-url:              https://stevenleabo.com/
+baseurl:              leabs.github.io
 baseurl:          ''
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
