@@ -4,7 +4,7 @@ title: Netflix Style UI
 excerpt_separator:  <!--more-->
 description: "Some text here or something"
 category: Projects
-type: Javascript
+type: javascript
 image: screenshots/netflixui/1.png
 tags:
   - Drupal
