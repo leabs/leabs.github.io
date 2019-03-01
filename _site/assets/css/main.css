@@ -1,8 +1,6 @@
-@font-face {
-  font-family: Proxima-Nova;
-  src: url("{{ site.baseurl }}/assets/fonts/Proxima-Nova.otf"); }
+
 * {
-  font-family: Proxima-Nova !important; }
+  font-family: font-family: 'Nunito', sans-serif; }
 
 .page > .container {
   min-height: 100vh; }
