@@ -3,6 +3,8 @@ layout: default
 ---
 <div class="main-content">
     <section class="section">
+        <h1 style="text-align: center; font-size: 2em; margin-bottom:30px;">Steven Leabo // Web Developer</h1>
+        <br>
         {% include pagination-newer.html %}
         {{ content }}
         {% for post in site.projects %}
@@ -11,11 +13,14 @@ layout: default
         <div class="columns">
             {% endif %}
             <div class="column is-6">
+
                 <div class="card" style="width:100%">
                     <div class="card-image">
+                        <a href="{{post.url}}">
                         <figure class="image ">
                             <img src="{{ site.baseurl }}/assets/{{ post.image }}" alt="Placeholder image" style="border-radius:0;">
                         </figure>
+                        </a>
                     </div>
                     <div class="card-content">
                         <div class="media">
