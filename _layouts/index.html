@@ -6,14 +6,14 @@ layout: default
         {% include pagination-newer.html %}
         {{ content }}
         {% for post in site.projects %}
-        {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
+        {% capture modulo %}{{ forloop.index0 | mod:2 }}{% endcapture %}
         {% if modulo == '0' or forloop.first %}
         <div class="columns">
             {% endif %}
-            <div class="column is-4 is-flex">
+            <div class="column is-6">
                 <div class="card" style="width:100%">
                     <div class="card-image">
-                        <figure class="image is-4by3">
+                        <figure class="image ">
                             <img src="{{ site.baseurl }}/assets/{{ post.image }}" alt="Placeholder image" style="border-radius:0;">
                         </figure>
                     </div>
@@ -41,7 +41,7 @@ layout: default
                 </div>
                 </article>
             </div>
-            {% if modulo == '2' or forloop.last %}
+            {% if modulo == '1' or forloop.last %}
         </div>
         {% endif %}
         {% endfor %}
