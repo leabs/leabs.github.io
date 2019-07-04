@@ -5,8 +5,12 @@
   {% include scripts.html %}
 
   <body class="{{ page.layout }}{% if page.url == '/' %} home{% endif %}"  >
-    <section class="hero is-medium is-dark">
+   
+      {% include navbar.html %}
+  
 
+    <section class="hero is-medium is-light is-bold">
+      
     
 
     <main class="container">

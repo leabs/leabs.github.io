@@ -3,16 +3,15 @@ layout: default
 ---
 <div class="main-content">
     <section class="section">
-        <img src="/assets/images/steven.png" alt="" style="max-width:500px; display:block; margin:0 auto;" />
+
         <br>
         {% include pagination-newer.html %}
         {{ content }}
         {% for post in site.projects %}
-        {% capture modulo %}{{ forloop.index0 | mod:2 }}{% endcapture %}
-        {% if modulo == '0' or forloop.first %}
+        
         <div class="columns">
             {% endif %}
-            <div class="column is-6">
+            <div class="column is-12">
 
                 <div class="card" style="width:100%">
                     <div class="card-image">
@@ -46,9 +45,9 @@ layout: default
                 </div>
                 </article>
             </div>
-            {% if modulo == '1' or forloop.last %}
+            
         </div>
-        {% endif %}
+        
         {% endfor %}
         {% include pagination-older.html %}
     </section>

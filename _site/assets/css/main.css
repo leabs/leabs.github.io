@@ -8,9 +8,6 @@
 .iziModal-content > img {
   margin-bottom: 0; }
 
-img {
-  border-radius: 0;
-  max-width: 100% !important; }
 
 .owl-carousel > img {
   max-width: 100%; }
