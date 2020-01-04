@@ -3,52 +3,53 @@ layout: default
 ---
 <div class="main-content">
     <section class="section">
-
+        <h2>Projects</h2>
         <br>
-        {% include pagination-newer.html %}
-        {{ content }}
         {% for post in site.projects %}
-        
-        <div class="columns">
-            
-            <div class="column is-12">
-
-                <div class="card" style="width:100%">
-                    <div class="card-image">
-                        <a href="{{post.url}}">
-                        <figure class="image ">
-                            <img src="{{ site.baseurl }}/assets/{{ post.image }}" alt="Placeholder image" style="border-radius:0;">
-                        </figure>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="{{ site.baseurl }}/assets/images/{{ post.type }}.png" alt="{{ post.type }} logo">
-                                </figure>
-                            </div>
-                            <div class="media-content">
-                                <p class="title is-4" style="line-height:2.5"><a href="{{post.url}}">{{ post.title }}</a></p>
+            <div class="columns">
+                
+                <div class="column is-12" style="background:white">
+                    <div class="columns">
+                        <div class="column is-5">
+                            <img src="{{ site.baseurl }}/assets/{{ post.image }}" alt="Placeholder image" style="border-radius:0; border:1px solid #c3c3c3; box-shadow:5px 5px 10px rgba(0,0,0,0.3);">
+                        </div>
+                        <div class="column" style="justify-content: center; display: flex; flex-grow: 1; flex-direction: column;">
+                            <p class="title is-4" style="line-height:.75"><a href="{{post.url}}">{{ post.title }}</a></p>
+                            <br>
+                            <div class="content" style="padding-top:0;">
+                                {{ post.description }}
+                                <br>
+                                
+                                {% for tags in projects.tags %}
+                                    <a href="#" class="tag is-rounded">{{ tags }}</a>
+                                {% endfor %}
+                                <br>
                             </div>
                         </div>
-                        <div class="content" style="padding-top:0;">
-                            {{ post.description }}
-                            <br>
+                        
+                        
+                    </div>
+                    <hr>
+                {% endfor %}
+                
+                {% include pagination-older.html %}
+            </section>
+            <section class="section" >
+                <div >
+                    <h2>Blog</h2>
+                    <br>
+                    <div class="columns" style="background:white">
+                        <div class="column">
+                    <ul>
+                        {% for post in site.posts %}
+                            <li>
+                                <a href="{{ post.url }}" style="color:blue">{{ post.title }}</a>
+                            </li>
                             <hr>
-                            {% for tags in projects.tags %}
-                            <a href="#" class="tag is-rounded">{{ tags }}</a>
-                            {% endfor %}
-                            <br>
-                        </div>
-                    </div>
+                        {% endfor %}
+                    </ul>
                 </div>
-                </article>
-            </div>
-            
+                </div>
+                </div>
+            </section>
         </div>
-        
-        {% endfor %}
-        {% include pagination-older.html %}
-    </section>
-</div>

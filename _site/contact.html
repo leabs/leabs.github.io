@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
-<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" sizes="150x150" href="/favicon.ico" />
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" /> <!-- Additional head bits without overriding original head -->
     <!--Owl Carousel-->
@@ -29,6 +29,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" />
     <!--Clippy-->
     <link rel="stylesheet" type="text/css" href="/assets/clippy.css" media="all">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5DNT6Z4');</script>
+    <!-- End Google Tag Manager -->
 </head>
   <!--Jquery-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
@@ -75,6 +83,10 @@
 </script>
 
   <body class="page"  >
+    <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DNT6Z4"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
    
       <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
   <div class="container" style="padding:10px 0;">
@@ -94,7 +106,12 @@
     <div class="navbar-start">
       
 
-      <a class="navbar-item">
+      
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <a class="navbar-item" href="http://localhost:4000/about.html">
         About
       </a>
 
@@ -104,27 +121,45 @@
         </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
+          
+          <a class="navbar-item" href="/anaren/">
+            Anaren.com
           </a>
-          <a class="navbar-item">
-            Jobs
+          
+          <a class="navbar-item" href="/atmosphereiot/">
+            Atmosphere IoT
           </a>
-          <a class="navbar-item">
-            Contact
+          
+          <a class="navbar-item" href="/developer/">
+            Atmosphere Developer
           </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
+          
+          <a class="navbar-item" href="/netflixui/">
+            Netflix Style UI
           </a>
+          
+          
         </div>
       </div>
-    </div>
 
-    <div class="navbar-end">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Blog
+        </a>
+
+        <div class="navbar-dropdown">
+          
+          <a class="navbar-item" href="/web%20development/2020/01/04/my-2020-setup.html">
+            My front-end web development set...
+            <br>
+            04 January 2020
+          </a>
+          
+          
+        </div>
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary">
+          <a class="button is-primary" href="http://localhost:4000/contact.html">
             <strong>Contact</strong>
           </a>
          
@@ -136,7 +171,7 @@
 </nav>
   
 
-    <section class="hero is-medium is-light is-bold">
+    <section class="hero is-medium">
       
     
 

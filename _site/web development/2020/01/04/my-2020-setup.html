@@ -8,7 +8,7 @@
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>
-         Netflix Style UI &middot; Steven Leabo 
+         My front-end web development set up for 2020 &middot; Steven Leabo 
     </title>
     
 
@@ -82,7 +82,7 @@
 
 </script>
 
-  <body class="page"  >
+  <body class="post"  >
     <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DNT6Z4"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -177,22 +177,94 @@
 
     <main class="container">
     	
-      <header>
-	<h1 style="text-align: center; font-size: 2em; margin:30px 0;">Netflix Style UI</h1>
+      <section class="section">
+<header>
+  <h1 class="post-title">My front-end web development set up for 2020</h1>
 </header>
 <br>
 <div class="content">
-    <p><a href="https://codepen.io/leab/pen/wWQGzj" target="_blank">Link</a></p>
+  <div class="post-meta">
+  <span class="post-date">04 Jan 2020</span>
+  <span class="post-categories">
+    
+      &bull;
+
+      
+      
+      
+
+      
+        Web Development
+      
+    
+  </span>
+</div>
+
+  <br>
+
+  <div class="post-body">
+    <p>I have been doing front-end work as a full-time job for over 3 years. I started with an internship type job at a large space and defense company to redo their company website. Since then a segment of that company split off and I have been the main front-end person ever since (over 2 years).</p>
+
+<p>My daily tasks can include adding custom sections or content to our company website (which is built on a custom Wordpress theme that I built from scratch), adding content to our documentation website (which uses Jekyll which was also built from the ground up), to various marketing tasks and analytics tasks. I also help out with building front-end widgets and templates for our software (an internet of things app and web-app) which is built on custom css and handlebars templates.</p>
+
+<p>I’m leaving a few items off the list that are no brainers. Adobe apps for front-end is a no brainer, you’re going to be using the CC apps. Same goes for stuff like Homebrew and Node. These go without saying and are in some ways prerequisites to getting a development environment going.</p>
+
+<ol>
+  <li>
+    <p>IDE (Sublime Text) - For IDE I find myself using Sublime text whenever I can. It’s lightweight and fast. There are packages but they aren’t as deep as some found on VSCode or Jetbrains software, but I don’t need those things all the time. For most of what I do (adding a new header file for wordpress, new layout in jekyll, new template in handlebars) Sublime is fine. If I am working on something more complex like a Node app we use to track our software’s metrics I will use VSCode to make sure linting is golden and I don’t break anything (and nothing fails CircleCI).</p>
+  </li>
+  <li>
+    <p>OS (macOS) - I never used macOS before I went to school for web development. There I learned to make directories, ssh into servers, copy things over, etc. While this translates well to linux it does not translate to windows, so Windows development for me is still not super smooth (even with linux kernel support things always seem to go wrong). The majority of the reason I develop on mac is because that is how I learned, which leads me to my next item…</p>
+  </li>
+  <li>
+    <p>Git client (GitHub Desktop) - Git with a GUI. I have always done it this way. Even thought I can do basic commands in the terminal I always feel like the GUI is so much more intuitive because that is how I started to use git at my first internship. I was using git to store my projects before that gig but it was just bulk pulls to master since I wasn’t working on a team and was yet to understand the importance of breaking issues up into their own branch. Git Tower is a great alternative that I used for awhile but it’s expensive at $70 a year.</p>
+  </li>
+  <li>
+    <p>Project Management (Jira and Asana) - For task tracking we use Jira for the engineering / software side and Asana for marketing tasks. There are reasons we break them up but what it boils down to is sprints and stories make sense for engineering, and simple task lists in groups make sense for marketing and communications.</p>
+  </li>
+  <li>
+    <p>Terminal (iTerm 2) - There are plenty of reasons to use iTerm 2 over the default mac terminal or even one in VSCode. It boils down to customization. Not just how the terminal looks but how it works. It’s free and it’s great, you have nothing to lose. Once you use it you won’t go back.</p>
+  </li>
+  <li>
+    <p>Password manager (1Password and LastPass) - I have a personal 1Password account and my work uses LastPass. They both do the job and can sync passwords on your pc and mobile phone.</p>
+  </li>
+  <li>
+    <p>File Transfer (Transmit) - This is the best file sync software I have used and is well worth the one time license fee. It can connect to remote servers, or cloud storage services like Box and DropBox, or local storage on your network. You can set file rules, transfer rules, and general customization.</p>
+  </li>
+  <li>
+    <p>Local Development Environment (MAMP) - MAMP works for what I do with Wordpress. Building custom Wordpress themes is not possible without building locally, and the free version does everything I need. I have started playing around with Docker but would still use MAMP right now as I know it better than Docker currently.</p>
+  </li>
+  <li>
+    <p>API Client (Postman) - While this isn’t something I use everyday it does make GET and POST requests a breeze in APIs. When I use this I am getting requests from out custom node app which uses a replica of our DB for metric queries. In other words this lets you see what data you get from the API locally.</p>
+  </li>
+  <li>
+    <p>Secure Tunnel (ngrok) - Sometimes I need to build something locally and share it with a co-worker for feed back. Ngrok is a tool that takes a local port on your machine and makes a public tunnel to it so people outside your network can view the content. This is extremely helpful for those working remotely like I often do.</p>
+  </li>
+</ol>
+
+<p>Some software that is smaller but I still use often: Alfred 3 (fast search and automation), CopyClip (clipboard history), Oh My Zsh (zsh config, makes life in iTerm 2 even easier),Robo 3T (Mongo DB GUI), SnippetsLab (Snippet library and copy/paste).</p>
+
+    
+
+
+
+<div class="post-tags">
+  
+</div>
+  </div>
+
+  
+  <section class="related">
+  <h2>Related Posts</h2>
+  <ul class="posts-list">
+    
+  </ul>
+</section>
 
 </div>
-<script>
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-  
-   
-})
-</script>
+</section>
+
+
     </main>
 
     <!-- Optional footer content -->

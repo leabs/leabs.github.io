@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
-<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" sizes="150x150" href="/favicon.ico" />
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" /> <!-- Additional head bits without overriding original head -->
     <!--Owl Carousel-->
@@ -29,6 +29,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" />
     <!--Clippy-->
     <link rel="stylesheet" type="text/css" href="/assets/clippy.css" media="all">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5DNT6Z4');</script>
+    <!-- End Google Tag Manager -->
 </head>
   <!--Jquery-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
@@ -75,6 +83,10 @@
 </script>
 
   <body class="index home"  >
+    <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DNT6Z4"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
    
       <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
   <div class="container" style="padding:10px 0;">
@@ -94,7 +106,12 @@
     <div class="navbar-start">
       
 
-      <a class="navbar-item">
+      
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <a class="navbar-item" href="http://localhost:4000/about.html">
         About
       </a>
 
@@ -104,27 +121,45 @@
         </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
+          
+          <a class="navbar-item" href="/anaren/">
+            Anaren.com
           </a>
-          <a class="navbar-item">
-            Jobs
+          
+          <a class="navbar-item" href="/atmosphereiot/">
+            Atmosphere IoT
           </a>
-          <a class="navbar-item">
-            Contact
+          
+          <a class="navbar-item" href="/developer/">
+            Atmosphere Developer
           </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
+          
+          <a class="navbar-item" href="/netflixui/">
+            Netflix Style UI
           </a>
+          
+          
         </div>
       </div>
-    </div>
 
-    <div class="navbar-end">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Blog
+        </a>
+
+        <div class="navbar-dropdown">
+          
+          <a class="navbar-item" href="/web%20development/2020/01/04/my-2020-setup.html">
+            My front-end web development set...
+            <br>
+            04 January 2020
+          </a>
+          
+          
+        </div>
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary">
+          <a class="button is-primary" href="http://localhost:4000/contact.html">
             <strong>Contact</strong>
           </a>
          
@@ -136,7 +171,7 @@
 </nav>
   
 
-    <section class="hero is-medium is-light is-bold">
+    <section class="hero is-medium">
       
     
 
@@ -144,172 +179,124 @@
     	
       <div class="main-content">
     <section class="section">
-
+        <h2>Projects</h2>
         <br>
         
-
-        
-        
-        
-        <div class="columns">
-            
-            <div class="column is-12">
-
-                <div class="card" style="width:100%">
-                    <div class="card-image">
-                        <a href="/anaren/">
-                        <figure class="image ">
-                            <img src="/assets/screenshots/anaren/1.png" alt="Placeholder image" style="border-radius:0;">
-                        </figure>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="/assets/images/drupal.png" alt="drupal logo">
-                                </figure>
-                            </div>
-                            <div class="media-content">
-                                <p class="title is-4" style="line-height:2.5"><a href="/anaren/">Anaren.com</a></p>
+            <div class="columns">
+                
+                <div class="column is-12" style="background:white">
+                    <div class="columns">
+                        <div class="column is-5">
+                            <img src="/assets/screenshots/anaren/1.png" alt="Placeholder image" style="border-radius:0; border:1px solid #c3c3c3; box-shadow:5px 5px 10px rgba(0,0,0,0.3);">
+                        </div>
+                        <div class="column" style="justify-content: center; display: flex; flex-grow: 1; flex-direction: column;">
+                            <p class="title is-4" style="line-height:.75"><a href="/anaren/">Anaren.com</a></p>
+                            <br>
+                            <div class="content" style="padding-top:0;">
+                                Drupal 7 site for the space and defence company featuring product tables with over 700 products, landing pages on supported markets, and content reviewed by stake-holders.
+                                <br>
+                                
+                                
+                                <br>
                             </div>
                         </div>
-                        <div class="content" style="padding-top:0;">
-                            Drupal 7 site for the space and defence company featuring product tables with over 700 products, landing pages on supported markets, and content reviewed by stake-holders.
+                        
+                        
+                    </div>
+                    <hr>
+                
+            <div class="columns">
+                
+                <div class="column is-12" style="background:white">
+                    <div class="columns">
+                        <div class="column is-5">
+                            <img src="/assets/screenshots/atmosphereiot/1.png" alt="Placeholder image" style="border-radius:0; border:1px solid #c3c3c3; box-shadow:5px 5px 10px rgba(0,0,0,0.3);">
+                        </div>
+                        <div class="column" style="justify-content: center; display: flex; flex-grow: 1; flex-direction: column;">
+                            <p class="title is-4" style="line-height:.75"><a href="/atmosphereiot/">Atmosphere IoT</a></p>
                             <br>
+                            <div class="content" style="padding-top:0;">
+                                Some text here or something
+                                <br>
+                                
+                                
+                                <br>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <hr>
+                
+            <div class="columns">
+                
+                <div class="column is-12" style="background:white">
+                    <div class="columns">
+                        <div class="column is-5">
+                            <img src="/assets/screenshots/developer/1.png" alt="Placeholder image" style="border-radius:0; border:1px solid #c3c3c3; box-shadow:5px 5px 10px rgba(0,0,0,0.3);">
+                        </div>
+                        <div class="column" style="justify-content: center; display: flex; flex-grow: 1; flex-direction: column;">
+                            <p class="title is-4" style="line-height:.75"><a href="/developer/">Atmosphere Developer</a></p>
+                            <br>
+                            <div class="content" style="padding-top:0;">
+                                Some text here or something
+                                <br>
+                                
+                                
+                                <br>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <hr>
+                
+            <div class="columns">
+                
+                <div class="column is-12" style="background:white">
+                    <div class="columns">
+                        <div class="column is-5">
+                            <img src="/assets/screenshots/netflixui/1.png" alt="Placeholder image" style="border-radius:0; border:1px solid #c3c3c3; box-shadow:5px 5px 10px rgba(0,0,0,0.3);">
+                        </div>
+                        <div class="column" style="justify-content: center; display: flex; flex-grow: 1; flex-direction: column;">
+                            <p class="title is-4" style="line-height:.75"><a href="/netflixui/">Netflix Style UI</a></p>
+                            <br>
+                            <div class="content" style="padding-top:0;">
+                                Some text here or something
+                                <br>
+                                
+                                
+                                <br>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <hr>
+                
+                
+                
+
+            </section>
+            <section class="section" >
+                <div >
+                    <h2>Blog</h2>
+                    <br>
+                    <div class="columns" style="background:white">
+                        <div class="column">
+                    <ul>
+                        
+                            <li>
+                                <a href="/web%20development/2020/01/04/my-2020-setup.html" style="color:blue">My front-end web development set up for 2020</a>
+                            </li>
                             <hr>
-                            
-                            <br>
-                        </div>
-                    </div>
+                        
+                    </ul>
                 </div>
-                </article>
-            </div>
-            
-        </div>
-        
-        
-        
-        <div class="columns">
-            
-            <div class="column is-12">
-
-                <div class="card" style="width:100%">
-                    <div class="card-image">
-                        <a href="/atmosphereiot/">
-                        <figure class="image ">
-                            <img src="/assets/screenshots/atmosphereiot/1.png" alt="Placeholder image" style="border-radius:0;">
-                        </figure>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="/assets/images/jekyll.png" alt="jekyll logo">
-                                </figure>
-                            </div>
-                            <div class="media-content">
-                                <p class="title is-4" style="line-height:2.5"><a href="/atmosphereiot/">Atmosphere IoT</a></p>
-                            </div>
-                        </div>
-                        <div class="content" style="padding-top:0;">
-                            Some text here or something
-                            <br>
-                            <hr>
-                            
-                            <br>
-                        </div>
-                    </div>
                 </div>
-                </article>
-            </div>
-            
-        </div>
-        
-        
-        
-        <div class="columns">
-            
-            <div class="column is-12">
-
-                <div class="card" style="width:100%">
-                    <div class="card-image">
-                        <a href="/developer/">
-                        <figure class="image ">
-                            <img src="/assets/screenshots/developer/1.png" alt="Placeholder image" style="border-radius:0;">
-                        </figure>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="/assets/images/jekyll.png" alt="jekyll logo">
-                                </figure>
-                            </div>
-                            <div class="media-content">
-                                <p class="title is-4" style="line-height:2.5"><a href="/developer/">Atmosphere Developer</a></p>
-                            </div>
-                        </div>
-                        <div class="content" style="padding-top:0;">
-                            Some text here or something
-                            <br>
-                            <hr>
-                            
-                            <br>
-                        </div>
-                    </div>
                 </div>
-                </article>
-            </div>
-            
+            </section>
         </div>
-        
-        
-        
-        <div class="columns">
-            
-            <div class="column is-12">
-
-                <div class="card" style="width:100%">
-                    <div class="card-image">
-                        <a href="/netflixui/">
-                        <figure class="image ">
-                            <img src="/assets/screenshots/netflixui/1.png" alt="Placeholder image" style="border-radius:0;">
-                        </figure>
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="/assets/images/javascript.png" alt="javascript logo">
-                                </figure>
-                            </div>
-                            <div class="media-content">
-                                <p class="title is-4" style="line-height:2.5"><a href="/netflixui/">Netflix Style UI</a></p>
-                            </div>
-                        </div>
-                        <div class="content" style="padding-top:0;">
-                            Some text here or something
-                            <br>
-                            <hr>
-                            
-                            <br>
-                        </div>
-                    </div>
-                </div>
-                </article>
-            </div>
-            
-        </div>
-        
-        
-        
-
-    </section>
-</div>
     </main>
 
     <!-- Optional footer content -->
