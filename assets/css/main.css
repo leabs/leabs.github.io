@@ -43,4 +43,10 @@ h2{
 	font-size:32px;
   color:#d4d5d5;
 }
+span{
+  color:#d4d5d5;
+}
+section.hero{
+  margin-top:60px;
+}
 /*# sourceMappingURL=main.css.map */
