@@ -1,55 +1,16 @@
 ---
 layout: default
 ---
-<div class="main-content">
-    <section class="section">
-        <h2>Projects</h2>
-        <br>
-        {% for post in site.projects %}
-            <div class="columns">
-                
-                <div class="column is-12" style="background:white">
-                    <div class="columns">
-                        <div class="column is-5">
-                            <img src="{{ site.baseurl }}/assets/{{ post.image }}" alt="Placeholder image" style="border-radius:0; border:1px solid #c3c3c3; box-shadow:5px 5px 10px rgba(0,0,0,0.3);">
-                        </div>
-                        <div class="column" style="justify-content: center; display: flex; flex-grow: 1; flex-direction: column;">
-                            <p class="title is-4" style="line-height:.75"><a href="{{post.url}}">{{ post.title }}</a></p>
-                            <br>
-                            <div class="content" style="padding-top:0;">
-                                {{ post.description }}
-                                <br>
-                                
-                                {% for tags in projects.tags %}
-                                    <a href="#" class="tag is-rounded">{{ tags }}</a>
-                                {% endfor %}
-                                <br>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                    <hr>
-                {% endfor %}
-                
-                {% include pagination-older.html %}
-            </section>
-            <section class="section" >
-                <div >
-                    <h2>Blog</h2>
-                    <br>
-                    <div class="columns" style="background:white">
-                        <div class="column">
-                    <ul>
-                        {% for post in site.posts %}
-                            <li>
-                                <a href="{{ post.url }}" style="color:blue">{{ post.title }}</a>
-                            </li>
-                            <hr>
-                        {% endfor %}
-                    </ul>
-                </div>
-                </div>
-                </div>
-            </section>
-        </div>
+<section class="hero is-success is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Steven Leabo
+      </h1>
+      <h2 class="subtitle">
+        Web Developer
+      </h2>
+      <p>I build stuff and post some thoughts. Check out the links in the nav above to learn more.</p>
+    </div>
+  </div>
+</section>
