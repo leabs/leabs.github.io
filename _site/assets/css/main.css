@@ -1,8 +1,12 @@
 html{
-	background:#e7e7e7;
+	background:#363636;
 }
 * {
   font-family: font-family: 'Nunito', sans-serif; }
+
+.navbar{
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+}
 
 .page > .container {
   min-height: 100vh; }
@@ -29,11 +33,20 @@ nav.breadcrumb a{
 }
 p{
 	font-size: 18px;
+  color:#d4d5d5;
 }
 h1{
 	font-size: 40px;
+  color:#d4d5d5;
 }
 h2{
 	font-size:32px;
+  color:#d4d5d5;
+}
+span{
+  color:#d4d5d5;
+}
+section.hero{
+  margin-top:60px;
 }
 /*# sourceMappingURL=main.css.map */

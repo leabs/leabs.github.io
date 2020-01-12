@@ -1,9 +1,8 @@
-<nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="container" style="padding:10px 0;">
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a href="{{ site.url }}">
         <img src="/assets/images/steven.png" alt="" style="max-width:240px; display:block;  " />
-    </a>
+      </a>
 
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
@@ -15,12 +14,10 @@
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
       
-
-      
-      </div>
     </div>
 
     <div class="navbar-end">
+
       <a class="navbar-item" href="{{ site.url }}/about.html">
         About
       </a>
@@ -29,12 +26,11 @@
         <a class="navbar-link">
           Work
         </a>
-
         <div class="navbar-dropdown">
           {% for post in site.projects %}
-          <a class="navbar-item" href="{{post.url}}">
-            {{ post.title }}
-          </a>
+            <a class="navbar-item" href="{{post.url}}">
+              {{ post.title }}
+            </a>
           {% endfor %}
           
         </div>
@@ -44,26 +40,26 @@
         <a class="navbar-link">
           Blog
         </a>
-
         <div class="navbar-dropdown">
           {% for post in site.posts %}
-          <a class="navbar-item" href="{{post.url}}">
-            {{ post.title | truncate: 35 }}
-            <br>
-            {{ post.date | date: "%m/%d/%Y" }}
-          </a>
+            <a class="navbar-item" href="{{post.url}}">
+              {{ post.title | truncate: 35 }}
+              <br>
+              {{ post.date | date: "%m/%d/%Y" }}
+            </a>
           {% endfor %}
           
         </div>
+      </div>
+      
       <div class="navbar-item">
         <div class="buttons">
           <a class="button is-primary" href="{{ site.url }}/contact.html">
             <strong>Contact</strong>
           </a>
-         
+          
         </div>
       </div>
     </div>
   </div>
-</div>
 </nav>
