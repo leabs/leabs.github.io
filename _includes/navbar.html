@@ -50,7 +50,7 @@
           <a class="navbar-item" href="{{post.url}}">
             {{ post.title | truncate: 35 }}
             <br>
-            {{ post.date | date_to_long_string }}
+            {{ post.date | date: "%m/%d/%Y" }}
           </a>
           {% endfor %}
           
