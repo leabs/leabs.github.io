@@ -21,8 +21,11 @@ p, li {
   font-family: 'Nunito', sans-serif;
   font-size: 18px; }
 
+h2 {
+  font-size: 1.4rem; }
+
 h3 {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 20px; }
 
