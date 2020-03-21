@@ -1,16 +1,136 @@
 ---
 layout: default
 ---
-<section class="hero is-light is-medium">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
+<main>
+  <section class="section">
+    <div class="columns">
+      <div class="column is-3 has-text-centered">
+        <img src="assets/images/me.png" alt="me" style="border-radius:100%; width:70%; max-width:240px; display:inline-block; margin:0 auto;" />
+      </div>
+      <div class="column" style="margin-top:24px;">
+        <h1 class="title">
         Steven Leabo
-      </h1>
-      <h2 class="subtitle">
+        </h1>
+        <h2 class="subtitle">
         Web Developer
-      </h2>
-      <p>I build <a href="{{ site.url}}/projects.html">projects</a> and post some <a href="{{ site.url}}/blog.html">thoughts</a>. Check out the links in the nav above to learn more.</p>
+        </h2>
+        <p>Front-end web developer with over 3 years professional experience. I specialize in custom styling, fast secure static websites, and custom Wordpress sites.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+  <section class="section">
+    <div class="columns">
+      <div class="column">
+        <h3>Skills</h3>
+        <ul>
+          <li>Jekyll Static Site Generator</li>
+          <li>Wordpress</li>
+          <li>Google Analytics</li>
+          <li>Google Tag Manager</li>
+          <li>SEO Best Practices</li>
+          <li>Zoho CRM and Campaigns</li>
+          <li>Klipfolio Metric Tracking</li>
+          <li>Jira Issue Tracking</li>
+          <li>Adobe Creative Suite</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Skills</h3>
+        <ul>
+          <li>Jekyll Static Site Generator</li>
+          <li>Wordpress</li>
+          <li>Google Analytics</li>
+          <li>Google Tag Manager</li>
+          <li>SEO Best Practices</li>
+          <li>Zoho CRM and Campaigns</li>
+          <li>Klipfolio Metric Tracking</li>
+          <li>Jira Issue Tracking</li>
+          <li>Adobe Creative Suite</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Skills</h3>
+        <ul>
+          <li>Jekyll Static Site Generator</li>
+          <li>Wordpress</li>
+          <li>Google Analytics</li>
+          <li>Google Tag Manager</li>
+          <li>SEO Best Practices</li>
+          <li>Zoho CRM and Campaigns</li>
+          <li>Klipfolio Metric Tracking</li>
+          <li>Jira Issue Tracking</li>
+          <li>Adobe Creative Suite</li>
+        </ul>
+      </div>
+    </div>
+    
+  </section>
+  <section class="section has-text-centered" style="background:#ddd;">
+    <h3>Examples</h3>
+    <div class="owl-carousel owl-theme">
+  {% for image in site.static_files %}
+      {% if image.path contains 'assets/screenshots/' %}
+      <div> 
+        <a href="{{ site.baseurl }}{{ image.path }}" >
+            <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ page.title }} project screenshot" />
+        </a>
+      </div>
+      {% endif %}
+  {% endfor %}
+ 
+</div>
+  </section>
+  <section class="section has-text-centered">
+    <h3>Contact</h3>
+    <form
+      action="https://formspree.io/xaybppen"
+      method="POST"
+      style="max-width:600px;
+      margin: 0 auto;"
+      >
+      <div class="field">
+        <label class="label">Email:</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="bob@aol.com" name="_replyto">
+        </div>
+        <br>
+        <label class="label">Message:</label>
+        <div class="control">
+          <textarea class="textarea" type="text" placeholder="Hey man" name="message" rows="3"></textarea>
+        </div>
+        
+      </div>
+      <!-- your other form fields go here -->
+
+            <button class="button is-primary" type="submit">
+              <strong>Send</strong>
+            </button>
+            
+          
+    </form>
+  </section>
+</main>
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    lazyLoad:true,
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+    }
+})
+</script>
