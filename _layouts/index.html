@@ -66,7 +66,7 @@ layout: default
   </section>
   <section class="section has-text-centered" style="background:#eee;">
     <h3>Examples</h3>
-    <div class="owl-carousel owl-theme">
+    <div class="owl-carousel">
   {% for image in site.static_files %}
       {% if image.path contains 'assets/screenshots/' %}
       <div> 
@@ -114,6 +114,7 @@ layout: default
     lazyLoad:true,
     loop:true,
     margin:10,
+    nav:false,
     responsiveClass:true,
     responsive:{
         0:{
