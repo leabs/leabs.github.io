@@ -22,11 +22,13 @@ p, li {
   font-size: 18px; }
 
 h2 {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-weight: 500; }
 
 h3 {
   font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 20px; }
+  font-weight: 400;
+  margin-bottom: 10px; }
 
 /*# sourceMappingURL=main.css.map */
