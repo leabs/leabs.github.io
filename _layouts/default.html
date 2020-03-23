@@ -2,7 +2,7 @@
 <html lang="en-us">
 
   {% include head.html %}
-  {% include scripts.html %}
+  
 
   <body class="{{ page.layout }}{% if page.url == '/' %} home{% endif %}"  >
     <!-- Google Tag Manager (noscript) -->
@@ -26,4 +26,6 @@
   </section>
 
   </body>
+  {% include scripts.html %}
+  
 </html>
