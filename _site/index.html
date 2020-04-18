@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-  <head>
+<head>
     <link href="http://gmpg.org/xfn/11" rel="profile" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Front-end web developer with over 3 years professional experience. I specialize in custom styling, fast secure static websites, and custom Wordpress sites." />
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>
@@ -35,267 +36,98 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5DNT6Z4');</script>
     <!-- End Google Tag Manager -->
-</head>
-  <!--Jquery-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-<!--Owl Carousel-->
+
+    <!--Scripts-->
+    <!--Owl Carousel-->
 <script src="/assets/owlcarousel/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
-<!--Clippy-->
-<script src="https://rawgit.com/smore-inc/clippy.js/master/build/clippy.min.js"></script>
-
 <script>
-	document.addEventListener('DOMContentLoaded', function() {
-
-    // Get all "navbar-burger" elements
-    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-
-        // Add a click event on each of them
-        $navbarBurgers.forEach(function($el) {
-            $el.addEventListener('click', function() {
-
-                // Get the target from the "data-target" attribute
-                var target = $el.dataset.target;
-                var $target = document.getElementById(target);
-
-                // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-                $el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-
-            });
-        });
-    }
-
-    var tocListChildren = $('.toc-list-item').children()
-    var tocSection = $('#tocs');
-
-    if (tocListChildren.length <= 0) {
-        tocSection.hide();
-    }
-
+document.addEventListener('DOMContentLoaded', function() {
+// Get all "navbar-burger" elements
+var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+// Add a click event on each of them
+$navbarBurgers.forEach(function($el) {
+$el.addEventListener('click', function() {
+// Get the target from the "data-target" attribute
+var target = $el.dataset.target;
+var $target = document.getElementById(target);
+// Toggle the class on both the "navbar-burger" and the "navbar-menu"
+$el.classList.toggle('is-active');
+$target.classList.toggle('is-active');
 });
-
+});
+}
+var tocListChildren = $('.toc-list-item').children()
+var tocSection = $('#tocs');
+if (tocListChildren.length <= 0) {
+tocSection.hide();
+}
+});
 </script>
+</head>
 
-  <body class="index home"  >
-    <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DNT6Z4"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<body class="index home">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5DNT6Z4"
+      style="display:none;visibility:hidden" width="0"></iframe>
+  </noscript>
   <!-- End Google Tag Manager (noscript) -->
-   
-      <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="container">
-    <div class="navbar-brand">
-      <a href="http://localhost:4000">
-        <img src="/assets/images/steven.png" alt="" style="max-width:240px; display:block;  " />
-      </a>
-      
-    </div>
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
+
+
+  <section class="hero is-dark is-bold is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3 has-text-centered">
+          <img src="assets/images/me.jpeg" alt="me"
+          style="border-radius:100%; width:80%; max-width:240px; display:inline-block; margin:0 auto; box-shadow: 0 10px 10px rgba(0,0,0,0.4);" />
+        </div>
+        <div class="column" style="margin-top:24px;">
+          <h1 class="title">
+          Steven Leabo
+          </h1>
+          <h2 class="subtitle">
+          Web Developer
+          </h2>
+          <p>Front-end web developer with over 3 years professional experience. I specialize in custom styling, fast
+          secure static websites, and custom Wordpress sites.</p>
+          <a href="https://github.com/leabs" target="_blank" class="has-text-primary">GitHub</a><span> | </span>
+          <a href="https://codepen.io/leab" target="_blank" class="has-text-primary">CodePen</a><span> | </span>
+          <a href="https://www.linkedin.com/in/stevenleabo/" target="_blank" class="has-text-primary">LinkedIn</a><span> | </span>
+          <a href="https://www.upwork.com/o/profiles/users/~011442e16729fe0928/" target="_blank" class="has-text-primary">Upwork</a><span>
+        </div>
       </div>
-     
-    </div>
-  </div>
-</nav>
-  
+      <h2 class="has-text-centered">Contact</h2>
+      <form action="https://formspree.io/xaybppen" method="POST" style="max-width:600px;
+        margin: 0 auto;">
+        <div class="field">
+          <label class="label has-text-white">Email:</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="bob@aol.com" name="_replyto">
+          </div>
+          <br>
+          <label class="label has-text-white">Message:</label>
+          <div class="control">
+            <textarea class="textarea" type="text" placeholder="Hey man" name="message" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="has-text-centered">
+          <button class="button is-primary has-text-centered" type="submit">
+          <strong>Send</strong>
+          </button>
+        </div>
+      </form>
+    </section>
 
-    <section>
-      
-    
 
-    <main class="container" style="margin-top:40px">
-    	
-      <section class="section" style="background:#fff">
-  <div class="columns">
-    <div class="column is-3 has-text-centered">
-      <img src="assets/images/me.jpeg" alt="me" style="border-radius:100%; width:80%; max-width:240px; display:inline-block; margin:0 auto; box-shadow: 0 10px 10px rgba(0,0,0,0.4);" />
-    </div>
-    <div class="column" style="margin-top:24px;">
-      <h1 class="title">
-      Steven Leabo
-      </h1>
-      <h2 class="subtitle">
-      Web Developer
-      </h2>
-      <p>Front-end web developer with over 3 years professional experience. I specialize in custom styling, fast secure static websites, and custom Wordpress sites.</p>
-      <a href="https://github.com/leabs" target="_blank">GitHub</a><span> | </span>
-      <a href="https://codepen.io/leab" target="_blank">CodePen</a><span> | </span>
-      <a href="https://www.linkedin.com/in/stevenleabo/" target="_blank">LinkedIn</a>
-      <a href="https://www.upwork.com/o/profiles/users/~011442e16729fe0928/" target="_blank">Upwork</a>
-    </div>
-  </div>
-</section>
-<section class="section" style="background:#f5f5f5">
-  <div class="columns">
-    <div class="column">
-      <h2>Atmosphereiot.com</h2>
-      <p>Wordpress / CSS</p>
-    </div>
-    <div class="column">
-      <img src="assets/screenshots/atmo-device.png" alt="atmosphereiot.com screenshot" class="project-screens" />
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="columns">
-    <div class="column">
-      <img src="assets/screenshots/docs-hardware.png" alt="developer.atmosphereiot.com screenshot" class="project-screens" />
-    </div>
-    <div class="column">
-      <h2>Developer.atmosphereiot.com</h2>
-      <p>Jekyll / SCSS</p>
-    </div>
-  </div>
-</section>
-<section class="section" style="background:#f5f5f5">
-  <div class="columns">
-    <div class="column">
-      <h2>Platform.atmosphereiot.com</h2>
-      <p>Handlebars / CSS</p>
-    </div>
-    <div class="column">
-      <img src="assets/screenshots/docs-hardware.png" alt="developer.atmosphereiot.com screenshot" class="project-screens" />
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="columns">
-    <div class="column">
-      <img src="assets/screenshots/anaren/1.png" alt="anaren.com screenshot" class="project-screens" />
-    </div>
-    <div class="column">
-      <h2>Anaren.com</h2>
-  <p>Drupal</p>
-    </div>
-  </div>
-  
-</section>
-<section class="section" style="background:#f5f5f5">
-  <div class="columns">
-    <div class="column">
-      <h2>Netflix UI</h2>
-  <p>CSS / JQuery</p>
-    </div>
-    <div class="column">
-      <img src="assets/screenshots/netflixui/1.png" alt="netflix ui screenshot" class="project-screens" />
-    </div>
-  </div>
-</section>
-<section class="section">
-  <h2 class="has-text-centered">Experience</h2>
-  <div class="columns">
-    <div class="column">
-      <h3>Languages / CMS</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS / SCSS</li>
-        <li>Javascript</li>
-        <li>Liquid</li>
-        <li>Python</li>
-        <li>Gatsby / React</li>
-        <li>Wordpress</li>
-        <li>Jekyll</li>
-        <li>Drupal</li>
-        <li>Handlebars</li>
-      </ul>
-    </div>
-    <div class="column">
-      <h3>Framework / Libraries </h3>
-      <ul>
-        <li>Bulma</li>
-        <li>Bootstrap</li>
-        <li>UIKit</li>
-        <li>Chart.js</li>
-        <li>Owl Carousel</li>
-        <li>Yoast</li>
-        <li>Something else</li>
-        <li>Something else</li>
-        <li>Something else</li>
-      </ul>
-    </div>
-    <div class="column">
-      <h3>Software and Tools</h3>
-      <ul>
-        <li>Pattern Lab</li>
-        <li>Google Analytics</li>
-        <li>Google Tag Manager</li>
-        <li>SEO Best Practices</li>
-        <li>Zoho CRM and Campaigns</li>
-        <li>Klipfolio Metric Tracking</li>
-        <li>Jira Issue Tracking</li>
-        <li>Adobe Creative Suite</li>
-      </ul>
-    </div>
-  </div>
-  
-</section>
-<section class="section has-text-centered" style="background:#f5f5f5">
-  <h3>Contact</h3>
-  <form
-    action="https://formspree.io/xaybppen"
-    method="POST"
-    style="max-width:600px;
-    margin: 0 auto;"
-    >
-    <div class="field">
-      <label class="label">Email:</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="bob@aol.com" name="_replyto">
-      </div>
-      <br>
-      <label class="label">Message:</label>
-      <div class="control">
-        <textarea class="textarea" type="text" placeholder="Hey man" name="message" rows="3"></textarea>
-      </div>
-      
-    </div>
-    <!-- your other form fields go here -->
-    <button class="button is-primary" type="submit">
-    <strong>Send</strong>
-    </button>
-    
-    
-  </form>
-</section>
-<script>
-$('.owl-carousel').owlCarousel({
-lazyLoad:true,
-loop:true,
-margin:4,
-stagePadding: 10,
-dots:false,
-responsiveClass:true,
-autoplay:true,
-autoHeight:true,
-autoplayTimeout:3000,
-autoplayHoverPause:true,
-responsive:{
-0:{
-items:1,
-nav:false,
-autoplay:false,
-},
-600:{
-items:1,
-nav:false
-},
-1000:{
-items:2,
-nav:true,
-loop:false
-}
-}
-})
-</script>
-    </main>
+  <!-- Optional footer content -->
 
-    <!-- Optional footer content -->
 
-  </section>
 
-  </body>
+</body>
+
 </html>

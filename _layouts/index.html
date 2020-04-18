@@ -1,128 +1,47 @@
 ---
 layout: default
 ---
-<section class="section" style="background:#fff">
-  <div class="columns">
-    <div class="column is-3 has-text-centered">
-      <img src="assets/images/me.jpeg" alt="me" style="border-radius:100%; width:80%; max-width:240px; display:inline-block; margin:0 auto; box-shadow: 0 10px 10px rgba(0,0,0,0.4);" />
-    </div>
-    <div class="column" style="margin-top:24px;">
-      <h1 class="title">
-      Steven Leabo
-      </h1>
-      <h2 class="subtitle">
-      Web Developer
-      </h2>
-      <p>Front-end web developer with over 3 years professional experience. I specialize in custom styling, fast secure static websites, and custom Wordpress sites.</p>
-      <a href="https://github.com/leabs" target="_blank">GitHub</a><span> | </span>
-      <a href="https://codepen.io/leab" target="_blank">CodePen</a><span> | </span>
-      <a href="https://www.linkedin.com/in/stevenleabo/" target="_blank">LinkedIn</a><span><span> | </span>
-      <a href="https://www.upwork.com/o/profiles/users/~011442e16729fe0928/" target="_blank">Upwork</a><span>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <h2 class="has-text-centered">Experience</h2>
-  <div class="columns">
-    <div class="column">
-      <h3>Languages / CMS</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS / SCSS</li>
-        <li>Javascript</li>
-        <li>Liquid</li>
-        <li>Python</li>
-        <li>Gatsby / React</li>
-        <li>Wordpress</li>
-        <li>Jekyll</li>
-        <li>Drupal</li>
-        <li>Handlebars</li>
-      </ul>
-    </div>
-    <div class="column">
-      <h3>Framework / Libraries </h3>
-      <ul>
-        <li>Bulma</li>
-        <li>Bootstrap</li>
-        <li>UIKit</li>
-        <li>Chart.js</li>
-        <li>Owl Carousel</li>
-        <li>Yoast</li>
-
-      </ul>
-    </div>
-    <div class="column">
-      <h3>Software and Tools</h3>
-      <ul>
-        <li>Pattern Lab</li>
-        <li>Google Analytics</li>
-        <li>Google Tag Manager</li>
-        <li>SEO Best Practices</li>
-        <li>Zoho CRM and Campaigns</li>
-        <li>Klipfolio Metric Tracking</li>
-        <li>Jira Issue Tracking</li>
-        <li>Adobe Creative Suite</li>
-      </ul>
-    </div>
-  </div>
-  
-</section>
-<section class="section has-text-centered" style="background:#f5f5f5">
-  <h2 class="has-text-centered">Contact</h2>
-  <form
-    action="https://formspree.io/xaybppen"
-    method="POST"
-    style="max-width:600px;
-    margin: 0 auto;"
-    >
-    <div class="field">
-      <label class="label">Email:</label>
-      <div class="control">
-        <input class="input" type="text" placeholder="bob@aol.com" name="_replyto">
+<section class="hero is-dark is-bold is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3 has-text-centered">
+          <img src="assets/images/me.jpeg" alt="me"
+          style="border-radius:100%; width:80%; max-width:240px; display:inline-block; margin:0 auto; box-shadow: 0 10px 10px rgba(0,0,0,0.4);" />
+        </div>
+        <div class="column" style="margin-top:24px;">
+          <h1 class="title">
+          Steven Leabo
+          </h1>
+          <h2 class="subtitle">
+          Web Developer
+          </h2>
+          <p>Front-end web developer with over 3 years professional experience. I specialize in custom styling, fast
+          secure static websites, and custom Wordpress sites.</p>
+          <a href="https://github.com/leabs" target="_blank" class="has-text-primary">GitHub</a><span> | </span>
+          <a href="https://codepen.io/leab" target="_blank" class="has-text-primary">CodePen</a><span> | </span>
+          <a href="https://www.linkedin.com/in/stevenleabo/" target="_blank" class="has-text-primary">LinkedIn</a><span> | </span>
+          <a href="https://www.upwork.com/o/profiles/users/~011442e16729fe0928/" target="_blank" class="has-text-primary">Upwork</a><span>
+        </div>
       </div>
-      <br>
-      <label class="label">Message:</label>
-      <div class="control">
-        <textarea class="textarea" type="text" placeholder="Hey man" name="message" rows="3"></textarea>
-      </div>
-      
-    </div>
-    <!-- your other form fields go here -->
-    <button class="button is-primary" type="submit">
-    <strong>Send</strong>
-    </button>
-    
-    
-  </form>
-</section>
-<script>
-$('.owl-carousel').owlCarousel({
-lazyLoad:true,
-loop:true,
-margin:4,
-stagePadding: 10,
-dots:false,
-responsiveClass:true,
-autoplay:true,
-autoHeight:true,
-autoplayTimeout:3000,
-autoplayHoverPause:true,
-responsive:{
-0:{
-items:1,
-nav:false,
-autoplay:false,
-},
-600:{
-items:1,
-nav:false
-},
-1000:{
-items:2,
-nav:true,
-loop:false
-}
-}
-})
-</script>
+      <h2 class="has-text-centered">Contact</h2>
+      <form action="https://formspree.io/xaybppen" method="POST" style="max-width:600px;
+        margin: 0 auto;">
+        <div class="field">
+          <label class="label has-text-white">Email:</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="bob@aol.com" name="_replyto">
+          </div>
+          <br>
+          <label class="label has-text-white">Message:</label>
+          <div class="control">
+            <textarea class="textarea" type="text" placeholder="Hey man" name="message" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="has-text-centered">
+          <button class="button is-primary has-text-centered" type="submit">
+          <strong>Send</strong>
+          </button>
+        </div>
+      </form>
+    </section>

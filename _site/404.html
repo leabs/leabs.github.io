@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-  <head>
+<head>
     <link href="http://gmpg.org/xfn/11" rel="profile" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Front-end web developer with over 3 years professional experience. I specialize in custom styling, fast secure static websites, and custom Wordpress sites." />
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>
@@ -35,92 +36,61 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5DNT6Z4');</script>
     <!-- End Google Tag Manager -->
-</head>
-  <!--Jquery-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-<!--Owl Carousel-->
+
+    <!--Scripts-->
+    <!--Owl Carousel-->
 <script src="/assets/owlcarousel/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
-<!--Clippy-->
-<script src="https://rawgit.com/smore-inc/clippy.js/master/build/clippy.min.js"></script>
-
 <script>
-	document.addEventListener('DOMContentLoaded', function() {
-
-    // Get all "navbar-burger" elements
-    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-
-        // Add a click event on each of them
-        $navbarBurgers.forEach(function($el) {
-            $el.addEventListener('click', function() {
-
-                // Get the target from the "data-target" attribute
-                var target = $el.dataset.target;
-                var $target = document.getElementById(target);
-
-                // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-                $el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-
-            });
-        });
-    }
-
-    var tocListChildren = $('.toc-list-item').children()
-    var tocSection = $('#tocs');
-
-    if (tocListChildren.length <= 0) {
-        tocSection.hide();
-    }
-
+document.addEventListener('DOMContentLoaded', function() {
+// Get all "navbar-burger" elements
+var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+// Add a click event on each of them
+$navbarBurgers.forEach(function($el) {
+$el.addEventListener('click', function() {
+// Get the target from the "data-target" attribute
+var target = $el.dataset.target;
+var $target = document.getElementById(target);
+// Toggle the class on both the "navbar-burger" and the "navbar-menu"
+$el.classList.toggle('is-active');
+$target.classList.toggle('is-active');
 });
-
+});
+}
+var tocListChildren = $('.toc-list-item').children()
+var tocSection = $('#tocs');
+if (tocListChildren.length <= 0) {
+tocSection.hide();
+}
+});
 </script>
+</head>
 
-  <body class="default"  >
-    <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DNT6Z4"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<body class="default">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5DNT6Z4"
+      style="display:none;visibility:hidden" width="0"></iframe>
+  </noscript>
   <!-- End Google Tag Manager (noscript) -->
-   
-      <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="container">
-    <div class="navbar-brand">
-      <a href="http://localhost:4000">
-        <img src="/assets/images/steven.png" alt="" style="max-width:240px; display:block;  " />
-      </a>
-      
-    </div>
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-      </div>
-     
-    </div>
-  </div>
-</nav>
-  
 
-    <section>
-      
-    
 
-    <main class="container" style="margin-top:40px">
-    	
-      <section class="section">
+  <section class="section">
 <div class="page">
   <h1 class="page-title">404: Page not found</h1>
   <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="http://localhost:4000">Head back home</a> to try finding it again.</p>
 </div>
 </section>
 
-    </main>
 
-    <!-- Optional footer content -->
 
-  </section>
+  <!-- Optional footer content -->
 
-  </body>
+
+
+</body>
+
 </html>
