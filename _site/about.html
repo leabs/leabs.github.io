@@ -2,14 +2,14 @@
 <html lang="en-us">
 
 <head>
-    <link href="http://gmpg.org/xfn/11" rel="profile" />
+    <link href="http://localhost:4000" rel="profile" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Front-end web developer with over 3 years professional experience. I specialize in custom styling, fast secure static websites, and custom Wordpress sites." />
     <!-- Enable responsiveness on mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>
-         About &middot; Steven Leabo 
+     About &middot; Steven Leabo 
     </title>
     
 
@@ -23,12 +23,6 @@
 <link rel="apple-touch-icon-precomposed" sizes="150x150" href="/favicon.ico" />
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" /> <!-- Additional head bits without overriding original head -->
-    <!--Owl Carousel-->
-    <link rel="stylesheet" href="/assets/owlcarousel/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="/assets/owlcarousel/assets/owl.theme.default.min.css" />
-    <!--Modal-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" />
-
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -36,36 +30,14 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5DNT6Z4');</script>
     <!-- End Google Tag Manager -->
-
     <!--Scripts-->
-    <!--Owl Carousel-->
-<script src="/assets/owlcarousel/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-// Get all "navbar-burger" elements
-var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-// Check if there are any navbar burgers
-if ($navbarBurgers.length > 0) {
-// Add a click event on each of them
-$navbarBurgers.forEach(function($el) {
-$el.addEventListener('click', function() {
-// Get the target from the "data-target" attribute
-var target = $el.dataset.target;
-var $target = document.getElementById(target);
-// Toggle the class on both the "navbar-burger" and the "navbar-menu"
-$el.classList.toggle('is-active');
-$target.classList.toggle('is-active');
-});
-});
-}
-var tocListChildren = $('.toc-list-item').children()
-var tocSection = $('#tocs');
-if (tocListChildren.length <= 0) {
-tocSection.hide();
-}
-});
-</script>
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Steven Leabo" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:4000" />
+    <meta property="og:image" content="assets/images/me.jpeg" />
+    <meta property="og:description" content="Front-end web developer with over 3 years professional experience. I specialize in custom styling, fast secure static websites, and custom Wordpress sites." />
+    <meta property="og:site_name" content="Steven Leabo" />
 </head>
 
 
