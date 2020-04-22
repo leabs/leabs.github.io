@@ -1,22 +1,17 @@
 ---
 layout: default
 ---
-<section class="section is-dark">
-<header>
-  <h1 class="post-title">{{ page.title }}</h1>
-</header>
-<br>
-<div class="content">
-  {% include post-meta.html post=page %}
-  <br>
 
-  <div class="post-body">
-    {{ content }}
-    {% include post-tags.html post=page %}
-  </div>
+<section class="hero is-dark is-bold is-fullheight">
+    <div class="hero-body content" style="max-width:900px; margin:0 auto;">
+        <div class="container">
+            <span>{{ page.date | date: "%m/%d/%Y" }}</span>
+            <h1 class="has-text-light">{{ page.title }}</h1>
+            
+            
+            {{ content }}
 
-  {% include comments.html %}
-  {% include related_posts.html %}
-</div>
+            <a href="{{ site.url}}" class="has-text-warning"><- Back Home</a>
+        </div>
+    </div>
 </section>
-
