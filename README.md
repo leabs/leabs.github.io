@@ -1,6 +1,6 @@
 # stevenleabo.com
 
-Jekyll landing page for [stevenleabo.com](stevenleabo.com). 
+Jekyll landing page for [https://stevenleabo.com](https://stevenleabo.com). 
 
 * Clone
 * `bundle Install`
