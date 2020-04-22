@@ -1,7 +1,6 @@
 ---
 label: Page Template
 hide_body: false
-is_partial: false
 fields:
 - name: layout
   label: Layout
@@ -18,5 +17,3 @@ fields:
   type: text
   hidden: false
   default: ''
-pages:
-- testing-page-creation.md
