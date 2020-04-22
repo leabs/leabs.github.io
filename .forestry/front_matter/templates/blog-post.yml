@@ -5,6 +5,7 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: post
 - type: text
   name: title
   label: title
@@ -14,6 +15,12 @@ fields:
 - type: boolean
   name: comments
   label: comments
-- type: datetime
-  name: date
+- name: date
+  type: datetime
   label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
