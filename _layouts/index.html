@@ -69,6 +69,8 @@ layout: default
                             {% for post in site.posts %}
                                 <li>
                                     <a href="{{ post.url }}" class="has-text-warning">{{ post.title }}</a>
+                                    <br>
+                                    <span style="font-size:12px;">{{ post.date | date: "%m/%d/%Y" }}</span>
                                 </li>
                             {% endfor %}
                         </ul>
