@@ -11,14 +11,11 @@ layout: default
                 </div>
                 <div class="column">
                     <h1 class="title">
-                        Steven Leabo
+                    Steven Leabo
                     </h1>
                     <h2 class="subtitle">
-                        Web Developer
+                    Web Developer
                     </h2>
-                    <p>Front-end web developer with over 3+ years professional experience. I specialize in custom
-                                                                                                styling, fast
-                                                                                                secure static websites, and custom Wordpress sites.</p>
                     <a class="has-text-warning" href="https://github.com/leabs" target="_blank">GitHub</a>
                     <span>
                         |
@@ -33,53 +30,56 @@ layout: default
                     </span>
                     <a class="has-text-warning" href="https://www.upwork.com/o/profiles/users/~011442e16729fe0928/" target="_blank">Upwork</a>
                     <span>
-                      |
-                  </span>
-                  <a class="has-text-warning" href="https://twitter.com/Shadow_Stack" target="_blank">Twitter</a>
-                   
+                        |
+                    </span>
+                    <a class="has-text-warning" href="https://twitter.com/Shadow_Stack" target="_blank">Twitter</a>
+                    <p>Front-end web developer with over 3+ years professional experience. I specialize in custom
+                        styling, fast
+                    secure static websites, and custom Wordpress sites.</p>
+                    
+                    <br>
+                    <h3>Example Projects:</h3>
+                    <ul>
+                        <li>
+                            <a class="has-text-warning" href="https://stevenleabo.com/jekyll-product-catalog/" target="_blank">Jekyll
+                            DataTable using Markdown Frontmatter</li>
+                        </li>
+                        <li>
+                            <a class="has-text-warning" href="https://stevenleabo.com/jekyll-with-forestry/" target="_blank">Jekyll
+                            blog posts published with Forestry CMS</li>
+                        </li>
+                        <li>
+                            <a class="has-text-warning" href="https://shadowstack.now.sh/" target="_blank">Gatsby
+                                site with continuous
+                            deployments using Vercel</li>
+                        </li>
+                        <li>
+                            <a class="has-text-warning" href="https://next-js-tutorial-mu.now.sh/" target="_blank">Next.js with Vercel</a></li>
+                        </li>
+                    </ul>
+                    
                 </div>
             </div>
-
-                <div class="columns">
-                    <div class="column">
-                        <h3>Example Projects:</h3>
-                        <ul>
-                            <li>
-                                <a class="has-text-warning" href="https://stevenleabo.com/jekyll-product-catalog/" target="_blank">Jekyll
-                                                                                                                                                DataTable using Markdown Frontmatter</li>
-                            </li>
-                            <li>
-                                <a class="has-text-warning" href="https://stevenleabo.com/jekyll-with-forestry/" target="_blank">Jekyll
-                                                                                                                                                blog posts published with Forestry CMS</li>
-                            </li>
-                            <li>
-                                <a class="has-text-warning" href="https://shadowstack.now.sh/" target="_blank">Gatsby
-                                                                                                                                                site with continuous
-                                                                                                                                                deployments using Vercel</li>
-                            </li>
-                            <li>
-                                <a class="has-text-warning" href="https://next-js-tutorial-mu.now.sh/" target="_blank">Next.js with Vercel</a></li>
-                            </li>
-                        </ul>
+            <div>
+                <h3>Blog:</h3>
+                
+                {% for post in site.posts %}
+                    <div class="columns" style="margin-bottom:0;">
+                        <div class="column is-2 is-hidden-mobile">
+                            <span>{{ post.date | date: "%m/%d/%Y" }}</span>
+                        </div>
+                        <div class="column">
+                            
+                            <a href="{{ post.url }}" class="has-text-warning">{{ post.title }}</a>
+                            
+                        </div>
                     </div>
-                    <div class="column">
-                        <h3>Blog:</h3>
-
-                        <ul>
-                            {% for post in site.posts %}
-                                <li>
-                                    <a href="{{ post.url }}" class="has-text-warning">{{ post.title }}</a>
-                                    <br>
-                                    <span style="font-size:12px;">{{ post.date | date: "%m/%d/%Y" }}</span>
-                                </li>
-                            {% endfor %}
-                        </ul>
-
-                    </div>
-                </div>
-
-        
-            
+                    
+                {% endfor %}
+                
+                
+                
+            </div>
         </div>
     </div>
 </section>
