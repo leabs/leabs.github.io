@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Forestry.io makes blog posting less painless
+title: Forestry.io makes blog posting less painful
 category: CMS
 comments: true
-date: 2020-04-22 00:00:00 +0000
+date: 2020-04-22T00:00:00.000+00:00
 
 ---
 I'm finding myself less likely to post on this blog when it's a site sitting in a repo waiting for me to add and build a markdown file.
