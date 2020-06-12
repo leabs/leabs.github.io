@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating an LLC
+title: Creating a LLC
 category: ''
 comments: false
 date: 2020-06-12 00:00:00 +0000
