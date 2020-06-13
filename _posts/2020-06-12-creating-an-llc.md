@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Creating a LLC
-category: ''
+category: 'Misc'
 comments: false
 date: 2020-06-12 00:00:00 +0000
 
 ---
-**The story so far...**
+The story so far...
 
 It has always been a dream of mine to be my own boss. I have had a lot of time since the pandemic hit and decided it might be the right time to take the plunge. Here is what I have done and learned so far:
 
