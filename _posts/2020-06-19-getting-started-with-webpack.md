@@ -8,6 +8,6 @@ date: 2020-06-19 00:00:00 +0000
 ---
 I worked through the webpack getting started guide found here: [https://webpack.js.org/guides/getting-started/](https://webpack.js.org/guides/getting-started/ "https://webpack.js.org/guides/getting-started/")
 
-My github repo can be found <a href="[https://github.com/leabs/learning-webpack](https://github.com/leabs/learning-webpack "https://github.com/leabs/learning-webpack")" target="_blank">here</a>.
+My github repo can be found [here](https://github.com/leabs/learning-webpack "Webpack repo").
 
-Pretty easy to set up and use. 
+Pretty easy to set up and use.
