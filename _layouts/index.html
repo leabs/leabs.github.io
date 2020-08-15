@@ -7,14 +7,15 @@ layout: default
       <!--Profile Section-->
       <div class="columns">
         <div class="column is-3 has-text-centered">
-          <img alt="me" src="assets/images/me.jpeg" style="border-radius:100%; width:80%; max-width:240px; display:inline-block; margin:0 auto; box-shadow: 0 10px 10px rgba(0,0,0,0.4);"/>
+          <img alt="me" src="assets/images/me.jpeg"
+            style="border-radius:100%; width:80%; max-width:240px; display:inline-block; margin:0 auto; box-shadow: 0 10px 10px rgba(0,0,0,0.4);" />
         </div>
         <div class="column">
           <h1 class="title">
-          Steven Leabo
+            Steven Leabo
           </h1>
           <h2 class="subtitle">
-          Web Developer
+            Web Developer
           </h2>
           <a class="has-text-warning" href="https://github.com/leabs" target="_blank">GitHub</a>
           <span>
@@ -28,32 +29,29 @@ layout: default
           <span>
             |
           </span>
-          <a class="has-text-warning" href="https://www.upwork.com/o/profiles/users/~011442e16729fe0928/" target="_blank">Upwork</a>
+          <a class="has-text-warning" href="https://www.upwork.com/o/profiles/users/~011442e16729fe0928/"
+            target="_blank">Upwork</a>
           <span>
             |
           </span>
           <a class="has-text-warning" href="https://twitter.com/Shadow_Stack" target="_blank">Twitter</a>
-           <span>
-            |
-          </span>
-          <a class="has-text-warning" href="https://shadowstackllc.com/" target="_blank">Shadow Stack, LLC</a>
           <br>
           <p>I specialize in custom styling, fast secure static websites, and custom Wordpress sites.</p>
           <br>
-          
+
         </div>
       </div>
       <div>
-    
+
         {% for post in site.posts %}
-          <div class="columns" style="margin-bottom:0;">
-            <div class="column is-2 is-hidden-mobile">
-              <span>{{ post.date | date: "%m/%d/%Y" }}</span>
-            </div>
-            <div class="column">
-              <a href="{{ post.url }}" class="has-text-warning">{{ post.title }}</a>
-            </div>
+        <div class="columns" style="margin-bottom:0;">
+          <div class="column is-2 is-hidden-mobile">
+            <span>{{ post.date | date: "%m/%d/%Y" }}</span>
           </div>
+          <div class="column">
+            <a href="{{ post.url }}" class="has-text-warning">{{ post.title }}</a>
+          </div>
+        </div>
         {% endfor %}
       </div>
     </div>
