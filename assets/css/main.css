@@ -53,3 +53,10 @@ h3 {
 a {
   color: #ffdd57 !important;
 }
+
+.hero.is-dark.is-bold{
+    color:#fff;
+    min-height:100vh;
+     background: rgb(2,0,36);
+ background: linear-gradient(220deg, rgba(2,0,36,1) 0%, rgba(129,67,67,1) 39%, rgba(0,212,255,1) 100%) !important; 
+}
