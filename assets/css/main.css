@@ -1,8 +1,8 @@
-.page>.container {
+.page > .container {
   min-height: 100vh;
 }
 
-.iziModal-content>img {
+.iziModal-content > img {
   margin-bottom: 0;
 }
 
@@ -10,7 +10,7 @@ img {
   border-radius: 0;
 }
 
-.owl-carousel>img {
+.owl-carousel > img {
   max-width: 100%;
 }
 
@@ -25,7 +25,7 @@ img {
 
 p,
 li {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 18px;
 }
 
@@ -54,9 +54,14 @@ a {
   color: #ffdd57 !important;
 }
 
-.hero.is-dark.is-bold{
-    color:#fff;
-    min-height:100vh;
-     background: rgb(2,0,36);
- background: linear-gradient(220deg, rgba(2,0,36,1) 0%, rgba(129,67,67,1) 39%, rgba(0,212,255,1) 100%) !important; 
+.hero.is-dark.is-bold {
+  color: #fff;
+  min-height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    220deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(129, 67, 67, 1) 39%,
+    indianred 100%
+  ) !important;
 }
