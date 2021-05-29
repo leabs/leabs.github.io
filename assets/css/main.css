@@ -2,7 +2,7 @@
   min-height: 100vh;
 }
 
-ERROR .iziModal-content > img {
+.iziModal-content > img {
   margin-bottom: 0;
 }
 
